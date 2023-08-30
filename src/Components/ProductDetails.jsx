@@ -37,11 +37,15 @@ const ProductDetails = () => {
         setShow(true)
       } 
       
-     let payload = {
+      if(size){
+        let payload = {
           ...productDetails,
           size
      }
      dispatch(addToCart(payload))
+      }
+      
+
   }
 
 
